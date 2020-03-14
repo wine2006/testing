@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block body %}
+<div class="jumtron">
+    {% include 'includes/_messages.html' %}
+    <h1><small> Welcome {{session.username}} </small></h1>
+    <small>Your balance is <h1> {{credit}}</h1></small>
+</div>
+{% endblock %}
